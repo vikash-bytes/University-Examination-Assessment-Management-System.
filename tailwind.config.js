@@ -1,55 +1,40 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
   darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        'display': ['"Playfair Display"', 'serif'],
-        'body': ['"DM Sans"', 'sans-serif'],
-        'mono': ['"JetBrains Mono"', 'monospace'],
-      },
       colors: {
         primary: {
           50: '#f0f4ff',
           100: '#e0e9ff',
-          200: '#c7d7fe',
-          300: '#a5bafb',
-          400: '#8194f8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
+          200: '#c7d7ff',
+          300: '#a5beff',
+          400: '#7d9dff',
+          500: '#5a7af8',
+          600: '#4263eb',
+          700: '#3451d1',
+          800: '#2c43a9',
+          900: '#293e86',
         },
-        accent: {
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-        },
-        surface: {
-          light: '#f8f9fc',
-          dark: '#0f1117',
-        }
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-out',
-        'slide-up': 'slideUp 0.4s ease-out',
-        'pulse-slow': 'pulse 3s infinite',
-        'shimmer': 'shimmer 2s infinite',
-      },
-      keyframes: {
-        fadeIn: { from: { opacity: 0 }, to: { opacity: 1 } },
-        slideUp: { from: { transform: 'translateY(20px)', opacity: 0 }, to: { transform: 'translateY(0)', opacity: 1 } },
-        shimmer: { '0%': { backgroundPosition: '-200% 0' }, '100%': { backgroundPosition: '200% 0' } },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(99, 102, 241, 0.3)',
-        'glow-accent': '0 0 20px rgba(249, 115, 22, 0.3)',
-        'card': '0 4px 24px rgba(0,0,0,0.08)',
-        'card-dark': '0 4px 24px rgba(0,0,0,0.4)',
-      }
+        card: '0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06)',
+        'card-hover': '0 4px 12px 0 rgb(0 0 0 / 0.12)',
+      },
+      animation: {
+        'slide-up': 'slideUp 0.3s ease-out',
+        'fade-in': 'fadeIn 0.2s ease-out',
+      },
+      keyframes: {
+        slideUp: { from: { transform: 'translateY(8px)', opacity: 0 }, to: { transform: 'translateY(0)', opacity: 1 } },
+        fadeIn: { from: { opacity: 0 }, to: { opacity: 1 } },
+      },
     },
   },
   plugins: [],
-};
+}

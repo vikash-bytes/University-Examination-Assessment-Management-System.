@@ -1,75 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizMaster - Online Quiz System</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="login-wrapper">
-            <div class="logo-section">
-                <h1>🎓 QuizMaster</h1>
-                <p>Master Your Knowledge</p>
-            </div>
-
-            <!-- Login Form -->
-            <div id="loginForm" class="auth-form active">
-                <h2>Welcome Back!</h2>
-                <form id="loginFormElement">
-                    <div class="form-group">
-                        <label for="loginEmail">Email</label>
-                        <input type="email" id="loginEmail" required placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="loginPassword">Password</label>
-                        <input type="password" id="loginPassword" required placeholder="Enter your password">
-                    </div>
-                    <div class="form-group">
-                        <label for="loginRole">Login As</label>
-                        <select id="loginRole" required>
-                            <option value="">Select Role</option>
-                            <option value="student">Student</option>
-                            <option value="teacher">Teacher</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                    <p class="switch-form">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
-                </form>
-            </div>
-
-            <!-- Signup Form -->
-            <div id="signupForm" class="auth-form">
-                <h2>Create Account</h2>
-                <form id="signupFormElement">
-                    <div class="form-group">
-                        <label for="signupName">Full Name</label>
-                        <input type="text" id="signupName" required placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="signupEmail">Email</label>
-                        <input type="email" id="signupEmail" required placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="signupPassword">Password</label>
-                        <input type="password" id="signupPassword" required placeholder="Create a password" minlength="6">
-                    </div>
-                    <div class="form-group">
-                        <label for="signupRole">Register As</label>
-                        <select id="signupRole" required>
-                            <option value="">Select Role</option>
-                            <option value="student">Student</option>
-                            <option value="teacher">Teacher</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                    <p class="switch-form">Already have an account? <a href="#" id="showLogin">Login</a></p>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <script type="module" src="js/auth.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Exam System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
 </html>
